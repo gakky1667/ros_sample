@@ -36,12 +36,14 @@
 // %Tag(CALLBACK)%
 void chatterCallback(const std_msgs::String::ConstPtr& msg)
 {
-  //ROS_INFO("I heard: [%s]", msg->data.c_str());
+  ROS_INFO("I heard: [%s]", msg->data.c_str());
+#if 0
 	int x=0;
 	for (int i(0);i<10000; i++){
 			x++;
 		}
 	printf("x = %d\n",x);   
+#endif
 }
 // %EndTag(CALLBACK)%
 
