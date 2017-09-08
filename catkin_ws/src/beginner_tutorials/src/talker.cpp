@@ -110,14 +110,8 @@ int main(int argc, char **argv)
 // %Tag(ROSCONSOLE)%
     ROS_INFO("%s", msg.data.c_str());
 // %EndTag(ROSCONSOLE)%
-int x=0;
-	for (int i(0);i<10000000; i++){
-		x++;
-	}
-printf("x = %d\n",x);
-
-
-    /**
+    
+		/**
      * The publish() function is how you send messages. The parameter
      * is the message object. The type of this object must agree with the type
      * given as a template parameter to the advertise<>() call, as was done
